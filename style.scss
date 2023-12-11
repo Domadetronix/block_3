@@ -216,9 +216,6 @@ header{
     .mobile-hide{
         display: none;
     }
-    .limit-block__effect{
-        right: 16px;
-    }
     .alignment-block{
         padding: 0 16px 24px 16px;
     }
@@ -243,9 +240,6 @@ header{
     .alignment-block{
         margin:0 24px 32px 24px;
     }
-    .effect{
-        right: 24px;
-    }
     
     .main-header{
         margin:0 24px 32px 24px;
@@ -258,9 +252,6 @@ header{
     }
     .tablet-hide{
         display: none;
-    }
-    .limit-block__effect{
-        right: 20px;
     }
 } 
 
@@ -278,9 +269,6 @@ header{
     .alignment-block{
         padding:0 32px 16px 32px;
     }
-    .effect{
-        right: 32px;
-    }
     
     .slider{
         flex-wrap: wrap;
@@ -293,10 +281,6 @@ header{
     }
     .article-body{
         gap: 32px;
-    }
-    
-    .limit-block__effect{
-        display: none;
     }
     .effect{
         display: none;
