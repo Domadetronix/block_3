@@ -89,6 +89,7 @@ header {
 .order-menu__text {
   color: #000;
   font-weight: 500;
+  display: none;
 }
 
 .header {
@@ -279,5 +280,8 @@ header {
   }
   .effect {
     display: none;
+  }
+  .order-menu__text {
+    display: block;
   }
 }
