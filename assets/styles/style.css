@@ -109,13 +109,22 @@ header {
 
 .title-block {
   position: relative;
+  /* 
+      &__decoration{
+          position: absolute;
+          left: 0;
+      }*/
 }
 .title-block__text {
   font-weight: bold;
+  display: flex;
 }
-.title-block__decoration {
-  position: absolute;
-  left: 0;
+.title-block__text:before {
+  content: " ";
+  height: auto;
+  width: 4px;
+  background-color: #41F6D7;
+  border-radius: 0 2px 2px 0;
 }
 
 /*.alignment-block{
@@ -204,7 +213,7 @@ header {
     display: none;
   }
   .main-header {
-    margin: 0 16px 24px 16px;
+    margin: 0 16px 24px 0;
   }
   .title-block__decoration {
     margin-left: -16px;
@@ -222,6 +231,9 @@ header {
   }
   .alignment-block {
     padding: 0 16px 24px 16px;
+  }
+  .title-block__text::before {
+    margin-right: 12px;
   }
 }
 /*-------------- ПЛАНШЕТ ----------------*/
@@ -242,7 +254,7 @@ header {
     margin: 0 24px 32px 24px;
   }
   .main-header {
-    margin: 0 24px 32px 24px;
+    margin: 0 24px 32px 0;
   }
   .title-block__decoration {
     margin-left: -24px;
@@ -252,6 +264,9 @@ header {
   }
   .tablet-hide {
     display: none;
+  }
+  .title-block__text::before {
+    margin-right: 20px;
   }
 }
 /*------------------ десктоп ----------------------*/
@@ -272,7 +287,7 @@ header {
     flex-wrap: wrap;
   }
   .main-header {
-    margin: 0 32px 32px 32px;
+    margin: 0 32px 32px 0;
   }
   .title-block__decoration {
     margin-left: -32px;
@@ -285,5 +300,8 @@ header {
   }
   .order-menu__text {
     display: block;
+  }
+  .title-block__text::before {
+    margin-right: 30px;
   }
 }
