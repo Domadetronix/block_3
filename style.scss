@@ -103,16 +103,6 @@ header{
     display: flex;
     gap: 16px;
     align-items: center;
-    &__item{
-        gap:9px;
-        display: flex;
-        align-items: center;
-    }
-    &__text{
-        color: #000;
-        font-weight: 500;
-        display: none;
-    }
 }
 .header{
     padding: 0 16px;
@@ -195,6 +185,9 @@ header{
 
 .text-block{
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .expand-button{
@@ -203,7 +196,6 @@ header{
     background: none;
     border: none;
     text-align: center;
-    margin-top:16px;
     &__text{
         font-size: 16px;
         font-weight: 500;
@@ -330,9 +322,6 @@ header{
     }
     .effect{
         display: none;
-    }
-    .order-menu__text{
-        display: block;
     }
     .title-block__text::before {
         margin-right: 30px;
