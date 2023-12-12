@@ -72,6 +72,33 @@ header{
     display: flex;
     align-items: center;
 }
+.button{
+    padding: 0;
+    border: none;
+    background: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    &__text{
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+        display: none;
+    }
+    &__icon{
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        &_content{
+            align-self: center;
+            margin: 0 auto;
+        }
+    }
+
+}
 .order-menu{
     display: flex;
     gap: 16px;
@@ -309,5 +336,8 @@ header{
     }
     .title-block__text::before {
         margin-right: 30px;
+    }
+    .button__text{
+        display: block;
     }
 }
